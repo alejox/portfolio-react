@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './nav.css'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
-import {BiBook, BiMessageSquareDetail} from 'react-icons/bi';
-import {RiServiceLine} from 'react-icons/ri'
+import {BiBook, BiMessageSquareDetail,BiPhotoAlbum} from 'react-icons/bi';
 import { useState } from 'react';
 
 const Nav = () => {
@@ -20,9 +20,9 @@ const Nav = () => {
       onClick={() => setActiveNav('#experience')}
       className={activeNav === '#experience' ? 'active': ''}
       ><BiBook/></a>
-      <a href="#services"
-      onClick={() => setActiveNav('#services')}
-      className={activeNav === '#services' ? 'active': ''}><RiServiceLine/></a>
+      <a href="#portfolio"
+      onClick={() => setActiveNav('#portfolio')}
+      className={activeNav === '#services' ? 'active': ''}><BiPhotoAlbum/></a>
       <a href="#contact"
       onClick={() => setActiveNav('#contact')}
       className={activeNav === '#contact' ? 'active': ''}><BiMessageSquareDetail/></a>
