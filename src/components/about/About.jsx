@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.jpg";
@@ -32,17 +33,16 @@ const About = () => {
             </article>
 
             <article className='about__card'>
+              <a href="https://github.com/alejox/" target="_blank" rel="noreferrer">
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>80+ Completed projects</small>
+              <small>See my projects on github</small> 
+              </a>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            mollitia reiciendis voluptatum, ut ipsum ea dolores, neque culpa eum
-            corrupti, consequuntur aliquid pariatur atque rerum? Dolores error
-            ducimus vel maiores!
+          Graphic designer and music graduate with professional experience in work environments, passionate about programming and looking for opportunities in the IT industry. I am an enterprising and innovative person; I consider myself self-taught since I have promoted projects without any prior knowledge, I demand myself in order to acquire the necessary tools to use and carry out the proposed work.
           </p>
 
           <a href='#contact' className='btn btn-primary'>
